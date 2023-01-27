@@ -1,0 +1,914 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Google Sans,arial,sans-serif-medium,sans-serif;
+}
+
+ /* style for header */
+.navbar .topnav .logo {
+    width: 90px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.navbar .topnav {
+    display: flex;
+    align-items: center;
+    padding: ;
+    margin: 0 20px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar .topnav .searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 41.2rem;
+    border-radius: 32px;
+    margin: 1rem 24rem 1rem 2rem;
+    padding: 7px;
+    box-shadow: 3px 3px 8px rgb(207, 206, 206);
+}
+
+.navbar .topnav input {
+    width: 75%;
+    padding: 0.4rem 1rem;
+    outline: none;
+    border: none;
+}
+
+.navbar .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
+  
+  font-size: 25px;
+  color: #70757a;
+}
+
+.navbar .topnav .search-icons {
+    border-left: 1px solid #ccc;
+    padding-left: 0.4rem;
+}
+
+.navbar .topnav .nav-icons {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .topnav .nav-icons a {
+   padding: 5px;
+   margin: 6px;
+}
+    
+
+.navbar .topnav .nav-icons a:hover {
+    background-color:  rgba(218,220,224,.5);
+    border-radius: 50%;
+}
+
+.navbar .topnav .text-logo img {
+    border-radius: 50%;
+}
+
+.navbar .topnav .ellipsis, .settings {
+    height: 25px;
+    width: 25px;
+}
+
+.navbar .topnav .text-logo {
+    height:32px;
+    width: 32px;
+}
+
+.navbar .nav-options {
+    display: flex;
+    align-items: center;
+    margin-left: 11rem;
+    padding-top: 5.5rem;
+}
+
+.navbar .options {
+    display: flex;
+    font-size: 0.9rem;
+    color: #5f6368;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+    
+}
+
+.navbar .nav-options span {
+    font-size: 16px;
+    margin-right: 0.25rem;
+}
+
+.navbar .nav-options .tools {
+    margin-left: 14.5rem;
+} 
+
+.navbar .all {
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
+}
+
+.navbar .all span {
+    color: #1a73e8;
+}
+
+/* .navbar .active {
+    background: #1a73e8;
+    height: 3px;
+    width: 2.3rem;
+    position: absolute;
+    bottom: 30.1rem;
+} */
+
+/* style for main */
+
+.main {
+    margin-left: 11.5rem;
+}
+
+.main .name-info {
+    display: flex;
+    align-items: center;
+    margin: 1.3rem 0;
+}
+
+.main .result {
+    color: #5f6368;
+    font-size: 0.9rem;
+    margin: 1rem 0 ;
+}
+
+.main .name-info img {
+    height: 56px;
+    max-width: 56px;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.main .name {
+    margin: 0 1.5rem;
+}
+
+.main .messi {
+    font-size: 28px;
+    line-height: 37px;
+    color: #202124;
+}
+
+.main .footballer {
+    color: #5F6368;
+    display: inline-block;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main .f-container span {
+    color: #202124;
+    font-size: 19px;
+    line-height: 22px; 
+}
+
+.main .f-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main .info-nav a {
+    font-size: 14px;
+    color: #202124;
+    background-color: #E7E7EA;    
+    border-radius: 25px;
+    padding: 11px 19px;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.main .info-nav .active {
+    border: 1px solid #202124;
+}
+
+.hr {
+    border-bottom: 0.5px solid #d2d4d8;
+}
+
+.main-body {
+    margin: 0 3rem 0 11.5rem;
+}
+
+.main-body .img-stk {
+    display: flex;
+    border-radius: 33%;
+    margin-top: 2rem;
+}
+
+.main-body .img-stk img {
+    width: 165px;
+    height: 135px;
+    margin: 0.06rem;
+}
+
+.main-body .img-stk .first-img {
+    border-radius: 10% 0 0 10%;
+}
+
+.main-body .img-stk .last-img {
+    border-radius: 0 10% 10% 0;
+}
+
+.main-body .more-images a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.main-body .more-images a:hover {
+    text-decoration: underline;
+}
+
+.main-body .more-images span {
+    font-size: 20px;
+}
+
+.main-body .more-images {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 32px;
+    gap: 0.4rem;
+    bottom: 35px;
+    left: 548px;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 0 8px;
+    border-radius: 6px 0 12px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main-body .top-stories p {
+    font-size: 21px;
+}
+
+.main-body .top-stories .psg-news {
+    display: flex;
+    align-items: center;
+}
+
+.main-body .top-stories a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0.5rem 0 0.8rem 0;
+    font-size: 19px;
+   
+}
+
+.main-body .top-stories a:hover {
+    text-decoration: underline;
+}
+
+.main-body .top-stories {
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+.main-body .top-stories .news-psg {
+    margin: 0.7rem 0;
+}
+
+.main-body .news .news-img {
+    border-radius: 10px;
+    /* margin: 1rem 0; */
+}
+
+.main-body .news a, .news2 a {
+    text-decoration: none;
+}
+
+.main-body .news a:hover, .news2 a:hover {
+    text-decoration: underline;
+}
+
+.main-body .news .text {
+    margin: 0.5rem 0;
+}
+
+.main-body .news p, .news2 p {
+    font-size: 14px;
+    color: #70757a;
+}
+
+
+.main-body .sec-post-img img {
+    border-radius: 8px;
+}
+
+.sec-news-post a, .news2 a {
+    line-height: 24px;
+}
+
+.news .sec-news p {
+    margin: 0.6rem 0;
+}
+
+.news .third-news a {
+    line-height: 24px; 
+}
+
+.sec-news .sec-post {
+    display: flex;
+}
+
+.news .sec-news {
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+.main-body .news {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.main-body .news .first-news {
+    margin: 1rem 0;
+    padding-right: 1rem;
+    border-right: 0.5px solid #dee0e4;
+}
+
+.main-body .sec-third-news {
+    margin: 1rem 0;
+}
+
+.third-news {
+    margin: 1rem 0;
+}
+
+.third-news p {
+    margin-top: 2.5rem;
+}
+
+.news-abt-ronaldo-messi {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+.news-abt-ronaldo-messi a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0.5rem 0 0.8rem 0;
+    font-size: 17px;
+}
+
+.news-abt-ronaldo-messi a:hover {
+    text-decoration: underline;
+}
+
+.news2 {
+    display: flex;
+    width: 100%;
+}
+
+.news2 .first-post {
+    display: flex;
+}
+
+.news2 .first-news {
+    margin: 1rem 0;
+    padding-right: 1rem;
+    border-right: 0.5px solid #dee0e4;
+    width: 50%;
+    cursor: pointer;
+}
+
+.news2 .sec-news {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    width: 50%;
+    cursor: pointer;
+}
+
+.news2 p {
+    margin: 0.6rem 0;
+}
+
+.main-body .also p {
+    color: inherit;
+    font-size: 18px;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+.nin {
+    border-bottom: 0.5px solid #dee0e4;
+    padding-bottom: 1.3rem;
+}
+
+.more-news {
+    display: inline-flex;
+    gap: 0.4rem;
+    background-color: #e6eaee;
+    padding: 0.5rem 5.5rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 79.9rem;
+    left: 24rem;
+    cursor: pointer;
+}
+
+.more-news:hover {
+    background-color: #b1b5b9;
+}
+
+.more-news span {
+    font-size: 20px;
+    color: #5F6368;
+}
+
+.more-news a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+}
+
+.people-ask .paa {
+    color: #202124;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 2.8rem 0 1.2rem 0;
+} 
+
+.drop-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0;
+    border-top: 0.5px solid #e7e7e7;    
+    cursor: pointer;
+}
+
+.hr-fd .hr-fdb {
+    border-top: 0.5px solid #e7e7e7;
+    margin-bottom: 1rem;
+}
+
+.hr-fd p {
+    cursor: pointer;
+    font-size: 12px;
+    color: #70757a;
+    position: absolute;
+    top: 106.1rem;
+    left: 49.5rem;
+    background-color: white;
+    padding: 0 0.6rem;
+   
+}
+
+.search-results .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.search-results .link p {
+    font-size: 14px;
+}
+
+.search-results .link span {
+    color: #5c5c5e;
+}
+
+.search-results .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.search-results .results a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.search-results .results a:hover {
+    text-decoration: underline;
+}
+
+.search-results .results .text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5c5c5e;
+}
+
+.search-results .results {
+    margin: 2.5rem 0;
+}
+
+.main-body .videos {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.main-body .videos p {
+    font-size: 20px;
+}
+
+.main-body .videos span {
+    color: #5F6368;
+}
+
+.main-body .video-news .video-play {
+    display: flex;
+    gap: 1.2rem;
+    cursor: pointer;
+    border-top: 0.5px solid #e7e7e7;
+    padding: 0.7rem 0;
+}
+
+.main-body .video-text a {
+    text-decoration: none;
+}
+
+.main-body .video-text a:hover {
+    text-decoration: underline;
+}
+
+.main-body .video-text p {
+    font-size: 15px;
+
+}
+
+.main-body .video-text .youtube {
+    margin: 0.9rem 0 0.2rem 0;
+}
+
+.main-body .video-text span, .main-body .video-text .time {
+    color: #5f6368;
+}
+
+.nin2 {
+    border-bottom: 0.5px solid #dee0e4;
+    padding-bottom: 0.9rem;
+}
+
+.more-news2 {
+    display: inline-flex;
+    gap: 0.4rem;
+    background-color: #e6eaee;
+    padding: 0.5rem 5.5rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 167.8rem;
+    left: 24rem;
+    cursor: pointer;
+}
+
+.more-news2:hover {
+    background-color: #b1b5b9;
+}
+
+.more-news2 span {
+    font-size: 20px;
+    color: #5F6368;
+}
+
+.more-news2 a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+}
+
+.results table {
+    width: 100%;
+    font-size: 14px; 
+    color: #5F6368; 
+    margin-top: 1rem;
+}
+
+.rel-src p {
+    cursor: pointer;
+    font-size: 12px;
+    color: #70757a;
+    position: absolute;
+    top: 244.7rem;
+    left: 49.5rem;
+    background-color: white;
+    padding: 0 0.6rem;
+   
+}
+
+.drpd {
+    padding: 0.5rem 0;
+    font-size: 16px;
+}
+
+.rel-pic {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.suggestions {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.res1, .res2 {
+    width: 50%;
+}
+
+.res1a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #e9ecf0;
+    margin-bottom: 0.4rem;
+    padding: 0.8rem 5rem 0.8rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.res1a a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.res1a p:hover {
+    text-decoration: underline;
+}
+
+.res1a span {
+    font-size: 20px;
+}
+
+.goog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.goog span {
+    color: #4285f4;
+}
+
+.goooogle .numbers {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.numbers a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 0.35rem;
+}
+
+.numbers a:hover {
+    text-decoration: underline;
+}
+
+.num-next p {
+    font-size: 14px;
+    margin-right: 0.35rem;
+}
+
+.goooogle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1.5rem 11rem 2.5rem 0;
+}
+
+.main-container {
+    display: flex;
+}
+
+.about-body {
+    margin: 2rem 5rem 0 0;
+}
+
+.about-body .about {
+    border-left:  0.5px solid #dee0e4;
+    padding-left: 1rem;
+    
+}
+
+.about-body .about a {
+    text-decoration: none;
+}
+
+.about-body .about a:hover {
+    text-decoration: underline;
+}
+
+.about-body .about .claim {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+.about-body .about p {
+    font-size: 14px;
+    line-height: 1.58;
+    color: #4d5156;
+    margin: 0.5rem 0;
+}
+
+.about .claim .tick {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.8rem;
+    border: 0.5px solid #dee0e4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.about .profiles .text {
+    font-size: 20px; 
+}
+
+.about .profiles .social-media {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+.about .profiles .social-media p {
+    text-align: center;
+}
+
+.social-media .youtube {
+    margin: 0 1rem;
+}
+
+.social-media img {
+    padding: 0 1rem;
+}
+
+.stats span {
+    padding: 6px;
+    line-height: 20px;
+    color: #4d5156;
+    border: 0.5px solid #dee0e4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.table .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table .heading p {
+    font-size: 12px;
+}
+
+.table .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.5px solid #dee0e4;
+}
+
+.table .lst {
+    border-bottom: 0.5px solid #dee0e4;
+    padding-bottom: 1.5rem;
+} 
+
+.pas-pic {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pas-pic .player {
+    width: 25%;
+}
+
+.pas-pic .player img {
+    border-radius: 9px;
+}
+
+.pas-pic .player a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+.pas-pic .player a:hover {
+    text-decoration: underline;
+}
+
+.see-more {
+    display: inline-flex;
+    gap: 0.4rem;
+    background-color: #e6eaee;
+    padding: 0.5rem 8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin: 2rem 2rem 1rem 0rem;
+}
+
+.see-more:hover {
+    background-color: #b1b5b9;
+}
+
+.see-more span {
+    font-size: 20px;
+    color: #5F6368;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    font-size: 15px;
+}
+
+footer .location {
+    padding: 1rem 0;
+}
+
+footer .nigeria {
+    display: flex;
+    margin-left: 11.5rem;
+}
+
+footer .nigeria .loc {
+    display: flex;
+    align-items: center;
+}
+
+footer .location .hr {
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid #dee0e4;
+}
+
+footer .loc {
+    padding-left: 1rem;
+    padding-bottom: 0.6rem ;
+}
+
+footer .loc a {
+    text-decoration: none;
+}
+
+footer .nigeria .text {
+    font-size: 15px;
+    color: #70757a;
+    padding-bottom: 0.6rem;
+    padding-right: 1rem;
+    border-right: 0.5px solid #dee0e4;
+}
+
+footer .help {
+    margin-left: 11.5rem;
+}
+
+footer .help a {
+    font-size: 15px;
+    color: #70757a;
+    text-decoration: none;
+    margin-right: 0.6rem;
+}
+
+
